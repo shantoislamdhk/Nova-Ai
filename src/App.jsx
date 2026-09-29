@@ -1,6 +1,8 @@
 import Navbar from './components/sections/Navbar.jsx'
 import Hero from './components/sections/Hero.jsx'
 import LogoCloud from './components/sections/LogoCloud.jsx'
+import Features from './components/sections/Features.jsx'
+import HowItWorks from './components/sections/HowItWorks.jsx'
 import Footer from './components/sections/Footer.jsx'
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
       <main id="main" className="flex-1">
         <Hero />
         <LogoCloud />
+        <Features />
+        <HowItWorks />
       </main>
 
       <Footer />
