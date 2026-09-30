@@ -3,6 +3,9 @@ import Hero from './components/sections/Hero.jsx'
 import LogoCloud from './components/sections/LogoCloud.jsx'
 import Features from './components/sections/Features.jsx'
 import HowItWorks from './components/sections/HowItWorks.jsx'
+import Pricing from './components/sections/Pricing.jsx'
+import Testimonials from './components/sections/Testimonials.jsx'
+import FAQ from './components/sections/FAQ.jsx'
 import Footer from './components/sections/Footer.jsx'
 
 function App() {
@@ -15,6 +18,9 @@ function App() {
         <LogoCloud />
         <Features />
         <HowItWorks />
+        <Pricing />
+        <Testimonials />
+        <FAQ />
       </main>
 
       <Footer />

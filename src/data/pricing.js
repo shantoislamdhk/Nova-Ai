@@ -1,0 +1,77 @@
+import { site } from './site.js'
+
+export const pricingSection = {
+  eyebrow: { label: 'Pricing', tone: 'nova' },
+  title: 'Start small, scale when the queue does',
+  subtitle:
+    'Every plan includes the same approval-first workflow. You only move up when your ticket volume or your team size says you should.',
+  billing: {
+    default: 'monthly',
+    periods: [
+      { id: 'monthly', label: 'Monthly' },
+      { id: 'yearly', label: 'Yearly', badge: 'Save 20%' },
+    ],
+  },
+  note: 'Prices in USD, per seat. No setup fee, no minimum commitment, cancel anytime.',
+  tiers: [
+    {
+      id: 'solo',
+      name: 'Solo',
+      description: 'For a single support specialist who wants the busywork gone.',
+      price: { monthly: 30, yearly: 24 },
+      periodLabel: 'per agent / month',
+      featured: false,
+      badge: null,
+      cta: { label: site.cta.primary, href: '#waitlist' },
+      features: [
+        '1 agent seat',
+        '250 drafted replies per month',
+        'Drafts from one connected help center',
+        'Source citations on every answer',
+        'Zendesk and Intercom inbox',
+        'Email support within 2 business days',
+      ],
+      footnote: null,
+    },
+    {
+      id: 'team',
+      name: 'Team',
+      description: 'For support teams that want the queue triaged before anyone opens it.',
+      price: { monthly: 80, yearly: 64 },
+      periodLabel: 'per agent / month',
+      featured: true,
+      badge: 'Most popular',
+      cta: { label: site.cta.primary, href: '#waitlist' },
+      features: [
+        'Unlimited agent seats',
+        'Unlimited drafted replies',
+        'Up to 5 connected sources, including runbooks and past replies',
+        'Queue triage, deduplication, and urgency ranking',
+        'Auto-send rules for low-risk replies',
+        'Slack digest and weekly deflection report',
+        'Priority support within 1 business day',
+      ],
+      footnote: 'Most teams see first reply drop under 2 minutes in their first week.',
+    },
+    {
+      id: 'business',
+      name: 'Business',
+      description: 'For multi-team orgs that need controls, audit, and a rollout plan.',
+      price: { monthly: 200, yearly: 160 },
+      periodLabel: 'per agent / month',
+      featured: false,
+      badge: null,
+      cta: { label: 'Contact sales', href: `mailto:${site.email}` },
+      features: [
+        'Everything in Team',
+        'Unlimited connected sources and inboxes',
+        'SSO, SCIM provisioning, and role-based permissions',
+        'Audit log export and 90-day answer history',
+        'Custom evaluation set to test accuracy before rollout',
+        'Guided onboarding for up to 50 agents',
+        'Dedicated support channel with a named engineer',
+      ],
+      footnote: 'Volume pricing available above 50 seats.',
+    },
+  ],
+}

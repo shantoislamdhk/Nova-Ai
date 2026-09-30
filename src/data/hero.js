@@ -69,7 +69,7 @@ export const heroMockup = {
       id: 'm1',
       author: 'Dana Whitfield',
       role: 'user',
-      body: "Hi — we downgraded from Scale to Growth last week and the difference is still being deducted. Can you release the balance?",
+      body: "Hi — we downgraded from Business to Team last week and the difference is still being deducted. Can you release the balance?",
       time: '10:42',
     },
     {
